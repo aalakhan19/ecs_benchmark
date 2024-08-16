@@ -177,3 +177,8 @@ tasks:
     dir: "{{.PROJECT_DIR}}"
     cmds:
       - task: test
+
+  install:gen-benchmark-report:
+    dir: "{{.PROJECT_DIR}}/scripts/gen-benchmark-report"
+    cmds:
+      - pipx run poetry install
