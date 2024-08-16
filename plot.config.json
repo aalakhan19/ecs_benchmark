@@ -577,7 +577,7 @@
       "name": "Flecs",
       "author": "@SanderMertens",
       "description": "Flecs is a fast and lightweight Entity Component System that lets you build games and simulations with millions of entities.",
-      "version": "v4.0.0",
+      "version": "v4.0.1",
       "link": "https://github.com/SanderMertens/flecs",
       "color": "#ff3300"
     },
@@ -585,7 +585,7 @@
       "name": "Flecs (emit)",
       "author": "@SanderMertens",
       "description": "Flecs is a fast and lightweight Entity Component System that lets you build games and simulations with millions of entities.",
-      "version": "v4.0.0",
+      "version": "v4.0.1",
       "link": "https://github.com/SanderMertens/flecs",
       "skip_candidate": true,
       "color": "#ff6c47"

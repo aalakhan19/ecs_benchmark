@@ -18,7 +18,7 @@ cpmaddpackage(
   GITHUB_REPOSITORY
   aminya/project_options
   VERSION
-  0.35.1
+  0.36.1
   # GIT_TAG           main
   DOWNLOAD_ONLY)
 if(project_options_ADDED)
@@ -34,7 +34,7 @@ run_vcpkg()
 # Set the project name and language
 project(
   ecs-benchmark
-  VERSION 7.0.0
+  VERSION 7.1.1
   DESCRIPTION "Benchmarks of common ECS (Entity-Component-System)-Frameworks in C++ (or C)"
   HOMEPAGE_URL "https://github.com/abeimler/ecs_benchmark"
   LANGUAGES CXX C)
