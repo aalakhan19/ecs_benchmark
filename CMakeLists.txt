@@ -112,6 +112,7 @@ endif()
 
 if(ENABLE_BENCHMARKS)
   message(AUTHOR_WARNING "Building Benchmarks.")
+  add_compile_definitions(gsl_FEATURE_GSL_COMPATIBILITY_MODE=1)
   add_subdirectory(benchmark)
 endif()
 
