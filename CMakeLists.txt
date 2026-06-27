@@ -88,7 +88,9 @@ add_subdirectory(libs)
 # ##########################################################################################################################################
 
 # add configure files
+add_compile_definitions(gsl_FEATURE_GSL_COMPATIBILITY_MODE=1)
 configure_file("${PROJECT_SOURCE_DIR}/include/Version.h.in" "${PROJECT_BINARY_DIR}/include/Version.h" @ONLY)
+add_subdirectory(src)
 
 if(ENABLE_TESTING)
   # This variable is set by project() in CMake 3.21+
@@ -112,11 +114,9 @@ endif()
 
 if(ENABLE_BENCHMARKS)
   message(AUTHOR_WARNING "Building Benchmarks.")
-  add_compile_definitions(gsl_FEATURE_GSL_COMPATIBILITY_MODE=1)
   add_subdirectory(benchmark)
 endif()
 
-add_subdirectory(src)
 
 # If MSVC is being used, and ASAN is enabled, we need to set the debugger environment so that it behaves well with MSVC's debugger, and we
 # can run the target from visual studio
