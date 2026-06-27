@@ -12,7 +12,7 @@ namespace ecs::benchmarks::pico_ecs::entities {
 
 class HeroMonsterEntityFactory final
     : public ecs::benchmarks::base::entities::HeroMonsterEntityFactory<
-          details::EntityManager, ecs_id_t, ecs::benchmarks::base::components::PositionComponent,
+          details::EntityManager, ecs_entity_t, ecs::benchmarks::base::components::PositionComponent,
           ecs::benchmarks::base::components::PlayerComponent, ecs::benchmarks::base::components::HealthComponent,
           ecs::benchmarks::base::components::DamageComponent, ecs::benchmarks::base::components::SpriteComponent> {
 public:

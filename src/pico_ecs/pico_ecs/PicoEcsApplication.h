@@ -18,7 +18,7 @@ namespace ecs::benchmarks::pico_ecs {
 class PicoEcsApplication {
 public:
   using EntityManager = ecs::benchmarks::pico_ecs::entities::details::EntityManager;
-  using TimeDelta = ecs_dt_t;
+  using TimeDelta = float;
   using BaseApplication =
       ecs::benchmarks::base::Application<EntityManager, TimeDelta, systems::MovementSystem, systems::DataSystem,
                                          systems::MoreComplexSystem, systems::HealthSystem, systems::DamageSystem,
@@ -69,7 +69,11 @@ public:
     /// @TODO: remove systems
   }
 
-  void update(TimeDelta dt) { ecs_update_systems(m_registry.ecs.get(), dt); }
+  void update(TimeDelta dt)
+  {
+    m_registry.currentDt = dt;
+    ecs_run_systems(m_registry.ecs.get(), 0);
+  }
 
 private:
   base::add_more_complex_system_t m_addMoreComplexSystem{base::add_more_complex_system_t::UseBasicSystems};
