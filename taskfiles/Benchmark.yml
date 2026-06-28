@@ -4,8 +4,8 @@ includes:
   entt: ./benchmarks/Entt.yml
   entityx: ./benchmarks/Entityx.yml
   ginseng: ./benchmarks/Ginseng.yml
-  mustache: ./benchmarks/Mustache.yml
-  openecs: ./benchmarks/OpenECS.yml
+  # mustache: ./benchmarks/Mustache.yml
+  # openecs: ./benchmarks/OpenECS.yml
   flecs: ./benchmarks/Flecs.yml
   pico-ecs: ./benchmarks/PicoEcs.yml
   gaia-ecs: ./benchmarks/GaiaEcs.yml
@@ -20,7 +20,7 @@ tasks:
     - task: entt:all
     - task: entityx:all
     - task: ginseng:all
-    - task: mustache:all
+    #- task: mustache:all
     #- task: openecs:all
     - task: flecs:all
     - task: oop:all
@@ -34,7 +34,7 @@ tasks:
     - task: entt:complex-group
     - task: entityx:complex
     - task: ginseng:complex
-    - task: mustache:complex
+    #- task: mustache:complex
     #- task: openecs:complex
     - task: flecs:complex
     - task: oop:complex

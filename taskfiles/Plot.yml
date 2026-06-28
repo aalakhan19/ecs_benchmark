@@ -19,12 +19,12 @@ tasks:
           {{.PROJECT_DIR}}/reports/entityx.json 
           {{.PROJECT_DIR}}/reports/entt.json 
           {{.PROJECT_DIR}}/reports/ginseng.json 
-          {{.PROJECT_DIR}}/reports/mustache.json 
           {{.PROJECT_DIR}}/reports/flecs.json
           {{.PROJECT_DIR}}/reports/pico-ecs.json
           {{.PROJECT_DIR}}/reports/gaia-ecs.json
         # TODO: add openecs
         #  {{.PROJECT_DIR}}/reports/openecs.json
+        #  {{.PROJECT_DIR}}/reports/mustache.json 
 
   entities:
     - task: utils:gen-report-template
@@ -34,12 +34,12 @@ tasks:
           {{.PROJECT_DIR}}/reports/entityx-entities.json 
           {{.PROJECT_DIR}}/reports/entt-entities.json 
           {{.PROJECT_DIR}}/reports/ginseng-entities.json 
-          {{.PROJECT_DIR}}/reports/mustache-entities.json 
           {{.PROJECT_DIR}}/reports/flecs-entities.json
           {{.PROJECT_DIR}}/reports/pico-ecs-entities.json
           {{.PROJECT_DIR}}/reports/gaia-ecs-entities.json
         # TODO: add openecs
         # {{.PROJECT_DIR}}/reports/openecs-entities.json
+        # {{.PROJECT_DIR}}/reports/mustache-entities.json 
 
   events:
     - task: utils:gen-report-template
@@ -49,7 +49,7 @@ tasks:
           {{.PROJECT_DIR}}/reports/entt-extended-event.json 
           {{.PROJECT_DIR}}/reports/entt-extended-event-comp.json 
           {{.PROJECT_DIR}}/reports/entt-extended-event-emit.json 
-          {{.PROJECT_DIR}}/reports/entt-extended-event-emit-stable.json 
+        # {{.PROJECT_DIR}}/reports/entt-extended-event-emit-stable.json 
         # {{.PROJECT_DIR}}/reports/flecs-extended-event-emit.json
         # {{.PROJECT_DIR}}/reports/flecs-extended-event.json
         # {{.PROJECT_DIR}}/reports/mustache-extended-event.json
@@ -67,7 +67,6 @@ tasks:
           {{.PROJECT_DIR}}/reports/entt-extended-partial-owning-group.json 
           {{.PROJECT_DIR}}/reports/entt-extended-stable.json 
           {{.PROJECT_DIR}}/reports/ginseng-extended.json 
-          {{.PROJECT_DIR}}/reports/mustache-extended.json 
           {{.PROJECT_DIR}}/reports/flecs-extended.json
           {{.PROJECT_DIR}}/reports/pico-ecs-extended.json
           {{.PROJECT_DIR}}/reports/gaia-ecs-extended.json
@@ -86,7 +85,6 @@ tasks:
           {{.PROJECT_DIR}}/reports/entt-complex-group.json 
           {{.PROJECT_DIR}}/reports/entt-complex-stable.json 
           {{.PROJECT_DIR}}/reports/ginseng-complex.json 
-          {{.PROJECT_DIR}}/reports/mustache-complex.json 
           {{.PROJECT_DIR}}/reports/flecs-complex.json
           {{.PROJECT_DIR}}/reports/oop-complex.json
           {{.PROJECT_DIR}}/reports/pico-ecs-complex.json
